@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: rgb(223, 202, 243)
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.header_title {
+  color: rgb(5, 8, 10);
+  text-align: center;
+  font-size: 30px;
+}
+
+.header_title {
+  padding-bottom: 20px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style-type: none;
+}
+
+.button {
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color:rgb(56, 233, 144);
+  padding: 10px 15px;
+  border-radius: 22px;
+}
+
+.button:hover {
+  background-color: yellow;
+  font-size: larger;
+  color: black;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 40px;
+  padding: 10px 20px 10px 20px;
+}
+
+.main_item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: rgb(119, 14, 110);
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.main_item:hover {
+  transform: rotateZ(180deg);
+  transition: all 0.9s ease;
+}
+
+
+.footer {
+  width: 30px;
+  height: 30px;
+  margin: 100px;
+  border-radius: 50px;
+  animation-name: ball;
+  animation-duration: 4000ms;
+  animation-iteration-count:infinite;
+  animation-direction:inherit
+}
+
+.footer:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ball {
+  0% {
+    background-color: yellow;
+    transform: translate(-100px,110px);
+  }
+
+  20% {
+    background-color: green;
+    transform: translate(10px,-110px);
+  }
+
+  30% {
+    background-color: blue;
+    
+  }
+
+  40% {
+    background-color: green;
+  }
+
+  50% {
+    background-color: pink;
+  }
+
+  60% {
+    background-color:blueviolet;
+  }
+
+  70% {
+    background-color: red;
+  }
+
+  80% {
+    background-color:orangered;
+  }
+
+  90% {
+    background-color: brown;
+  }
+
+  100% {
+    background-color:aqua;
+  }
+}
+
